@@ -39,7 +39,7 @@ const LandingSection = () => {
                 .required("Email is required"),
             comment: Yup.string()
                 .required("Comment is required")
-                .max(500, "comment must not exceed 500 characters"),
+                .min(25, "comment must exceed 25 characters"),
         }),
     });
 
